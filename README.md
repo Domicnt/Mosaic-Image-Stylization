@@ -34,18 +34,25 @@ Place the header files in a `../lib/` directory (or adjust paths in the source).
 
 ## Building
 
-    nvcc -std=c++17 -o mosaic src/main.cu
+Compile with `nvcc`:
+Replace the include path with your local CUDA installation directory and run:
 
-Make sure the include paths in `main.cu` point to your local CUDA installation and the `lib/` folder.
+```
+nvcc -std=c++17 -O2 -I"[path to CUDA include folder]" -o mosaic src\main.cu
+```
 
+Alternatively, update the `makefile` and run:
+
+```
+make
+```
 ---
 
 ## Usage
 
     ./mosaic config.toml
 
-The program will accept any .toml file it is run with as long as from the **current working directory**.  
-Two modes are available:
+Must include a valid `.toml` config file with the following parameters:
 
 ### Process mode
 
@@ -58,7 +65,7 @@ Two modes are available:
     save_contrast_map = false       # save Sobel edge detection map
     min_importance = 5              # min contrast for point placement
     base_importance = 0             # 'virtual contrast' added everywhere
-    contrast_power = 2              # influences edge strength
+    contrast_power = 2              # edge strength for point placement
     seed = 1
     bg_color = [100, 100, 100]      # RGB background when gap > 0
 
