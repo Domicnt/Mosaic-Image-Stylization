@@ -1,6 +1,6 @@
 # Mosaic – Low-poly Image Stylization
 
-**Mosaic** is a GPU-accelerated tool that transforms a photo into a stylised low-poly mesh. It analyses image edges, scatters points proportionally to contrast, builds a triangulation from those points, and draws the result as flat‑coloured triangles.
+**Mosaic** is a GPU-accelerated tool that transforms a photo into a stylised low-poly mesh. It analyses image edges, scatters points proportionally to contrast, builds a triangulation from those points, and draws the result as flat‑colored triangles.
 
 Example usage:
 | Input:                           | Output:                                        |
