@@ -1,0 +1,20 @@
+*.exe
+contrast_map.png
+output.png
+*.mosaic
+
+!example_input.jpg
+!example_contrast_map.png
+!example_mosaic_image.png
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+!*.code-workspace
+
+# Built Visual Studio Code Extensions
+*.vsix

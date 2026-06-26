@@ -1,0 +1,19 @@
+# config.toml
+
+mode = "process"            # "process" or "render"
+
+# Image input (process mode) or .mosaic input (render mode)
+input_file = "test images/bird.jpg"
+
+# Output files
+custom_file = "output.mosaic"
+output_png  = "output.png"
+
+target_points = 8000        # total number of triangles will be roughly 2x this
+gap_pixels = 0.0            # pixel gap between triangles (0 = no gap)
+bg_color = [170, 200, 255]  # only relevant with gap > 0
+save_contrast_map = true    # true = save contrast_map.png, false = don't
+min_importance = 5          # minimum edge strength (0-255)
+base_importance = 0         # base edge strength for every pixel
+contrast_power = 2          # influences edge strength
+seed = 1                    # random seed for reproducibility
