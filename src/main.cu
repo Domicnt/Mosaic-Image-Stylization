@@ -8,7 +8,7 @@
 #include <map>
 #include <cmath>
 
-#include <C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\include\cuda_runtime.h>
+#include <cuda_runtime.h>
 #define STB_IMAGE_IMPLEMENTATION
 #include "../lib/stb_image.h"
 #include "../lib/toml.hpp"
